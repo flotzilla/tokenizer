@@ -1,0 +1,40 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: service
+  description: tokenize service
+
+basePath: /api
+
+paths:
+  /tokenize:
+    get:
+      summary: test get token
+      operationId: api.tokenizer.get
+      responses:
+        200:
+          description: Sucess
+          schema:
+            type: string
+
+    post:
+      summary: create tokenized name entities
+      operationId: api.tokenizer.create
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: input
+          schema:
+            type: object
+            required:
+              - text
+            properties:
+              text:
+                type: string
+                minLength: 3
+      responses:
+        200:
+          description: OK

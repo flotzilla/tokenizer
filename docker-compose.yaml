@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  api-gateway:
+    container_name: api-gateway
+    restart: unless-stopped
+    depends_on:
+      - sentenser
+    build: ./
+    volumes:
+      - ./:/usr/src/app/
+    ports:
+       - 5000:5000
+    networks:
+      - app-internal
+
+  sentenser:
+    container_name: sentenser
+    restart: unless-stopped
+    image: sentenser-0.0.1
+    ports:
+      - 8082:8082
+    networks:
+      - app-internal
+
+networks:
+  app-internal:
+    driver : bridge
