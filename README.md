@@ -3,6 +3,7 @@
 # Tokenizer
 
 Simple REST (ha-ha) service for tokenization
+[Link](https://docs.google.com/document/d/1r23K1FsZ_dS9rYdzGcjH4zFOeef6mnKTJcbmBJWav6Q/edit?usp=sharing) to specification
 
 ### Getting started
 1. follow instructions in [senteser](https://github.com/flotzilla/sentenser) app README file
