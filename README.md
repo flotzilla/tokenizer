@@ -1,3 +1,5 @@
+[![MIT License][license-shield]][license-url]
+
 # Tokenizer
 
 Simple REST (ha-ha) service for tokenization
@@ -16,7 +18,7 @@ curl --request POST \
 }'
 ```
 
-###### Possible improvements
+### Possible improvements
 **tokenizer**
 * Reorganize config.py 
 * Add dependency injection for a services
@@ -37,5 +39,11 @@ wrapping around spring boot may not be the best solution in terms of saving memo
 * use additional dictionaries and rules for coreNLP 
 * handle different languages
  
-###### Implementation difficulties
+### Implementation difficulties
 * Confusions during implementing custom coreNLP `english.all.3class.distsim.crf.ser.gz` classifier. Didn't handle stacktrace errors.
+
+### License
+MIT 
+
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
+[license-url]: https://github.com/flotzilla/book_parser/blob/main/LICENSE
