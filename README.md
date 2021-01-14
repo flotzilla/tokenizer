@@ -5,7 +5,7 @@
 Simple REST (ha-ha) service for tokenization
 
 ### Getting started
-1. follow instructions in [senteser](https://github.com/flotzilla/sentenser_tes) app README file
+1. follow instructions in [senteser](https://github.com/flotzilla/sentenser) app README file
 2. Run sentenser `docker run -p 8082:8082 sentenser-0.0.1`
 3. Run `docker-compose up -d` 
 4. Send request, example: 
@@ -26,7 +26,7 @@ curl --request POST \
 * move to swagger and swaggerUI for better handling data models for main REST api
 * implement logging
 
-**[senteser](https://github.com/flotzilla/sentenser_tes)**
+**[senteser](https://github.com/flotzilla/sentenser)**
 * coreNLP library can be used as standalone jar and can be executed from command line or service, 
 wrapping around spring boot may not be the best solution in terms of saving memory and resources (memory consuming is around 2Gb idle)
 * tomcat server under sping boot may be tuned `server.tomcat.max-threads`. Asynchronous processing can be used also 
