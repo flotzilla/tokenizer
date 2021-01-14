@@ -40,6 +40,7 @@ wrapping around spring boot may not be the best solution in terms of saving memo
 * Use protobuff and gRPC for communicating between services instead of REST and json approach may save some resources
 * use additional dictionaries and rules for coreNLP 
 * handle different languages
+* use more lightweight docker images
  
 ### Implementation difficulties
 * Confusions during implementing custom coreNLP `english.all.3class.distsim.crf.ser.gz` classifier. Didn't handle stacktrace errors.
